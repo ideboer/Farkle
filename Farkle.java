@@ -171,6 +171,7 @@ public class Farkle
         int 6count = 0;
         
         for (int i = 0; i < rolls.length(); i++ )
+        {
 
             if (rolls.substring(i).equals("1"))
             {
@@ -245,14 +246,56 @@ public class Farkle
             {
                 pointDieString += "0";
             }
+        }
 
-            for (int count = 0; i < pointDieString.length(); count++)
-            {
-                if (pointDieString.substring(count).equals("1"))
-                {
-                    die1 = true
-                }
-            }
+        if (pointDieString.substring(0).equals("1"))
+        {
+            die1 = true;
+        }
+        else
+        {
+            die1 = false;
+        }
+        if (pointDieString.substring(1).equals("1"))
+        {
+            die2 = true;
+        }
+        else
+        {
+            die2 = false;
+        }
+        if (pointDieString.substring(2).equals("1"))
+        {
+            die3 = true;
+        }
+        else
+        {
+            die3 = false;
+        }
+        if (pointDieString.substring(3).equals("1"))
+        {
+            die4 = true;
+        }
+        else
+        {
+            die4 = false;
+        }
+        if (pointDieString.substring(4).equals("1"))
+        {
+            die5 = true;
+        }
+        else
+        {
+            die5 = false;
+        }
+        if (pointDieString.substring(5).equals("1"))
+        {
+            die6 = true;
+        }
+        else
+        {
+            die6 = false;
+        }
             
     }
 }
